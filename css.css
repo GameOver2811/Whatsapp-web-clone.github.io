@@ -1,0 +1,404 @@
+/* Initial configuration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Utility Classes CSS */
+
+:root {
+    --background-color:#fcf5eb;
+    --font-color:#1c1e21;
+    --primary-color:#43cd66;
+    --secondary-color:#111b21;
+    --font-family:"Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.main-container {
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: 5rem;
+    color: var(--background-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    color: var(--background-color);
+    font-size: 1.3rem;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.primary-button {
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 160px;
+    height: 50px;
+    background-color: var(--primary-color);
+    transition: all 250ms;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.secondary-button {
+    border: none;
+    font-size: 1.2rem;
+    background-color: var(--background-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+
+/* Main CSS */
+
+/* Nav-bar-CSS */
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    align-items: center;
+    background-color: #fcf5eb89;
+    backdrop-filter: blur(50px);
+}
+
+.logo {
+    margin-left: 40px;
+    width: 150px;
+    height: 35px;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--font-color);
+}
+
+.right {
+    align-items: center;
+}
+
+.download {
+    justify-content: space-evenly;
+    gap: 0px;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.align {
+    margin-top: 2rem;
+}
+
+.dropdown {
+    gap: 3px;
+}
+
+.dropdown i{
+    margin-top: 3px ;
+}
+
+
+.main-img {
+    background: url(images/asset\ 2.png);
+    height: 100vh;
+    width: 90vw;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 5vw;
+    overflow: hidden;
+    justify-content: space-evenly;
+    gap: 0px;
+}
+
+.text {
+    margin-top: 5rem;
+    margin-bottom: 5rem ;
+}
+.left-main-text {
+    width: 20rem;
+    margin-top: 13rem;
+    margin-left: -50px;
+    align-content: start;
+}
+
+.right-main-text {
+    width: 20rem;
+    margin-left: 0px;
+    margin-top: 5rem;
+    gap: 5px;
+    align-content: start;
+}
+
+._1 {
+    width: 28rem;
+}
+
+._3 {
+    width: 35rem;
+    height: 4rem;
+}
+
+._4 {
+    width: 30rem;
+    height: 18rem;
+}
+
+._5 {
+    width: 28rem;
+}
+
+
+/* Image CSS */
+
+.image {
+    margin: 20px 10vw;
+}
+.image img{
+    width: 80vw;
+    height: 200px;
+}
+
+/* Content-below CSS */
+
+.below-image-content {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--font-color);
+}
+.text {
+    width: 50vw;
+    text-align: center;
+}
+
+.phone-image {
+    justify-content: start;
+    gap: 10rem;
+    margin-top: 200px;
+    margin-left: 20%;
+}
+
+.content-phone {
+    width: 25vw;
+    align-content: center;
+}
+
+.content-phone h1{
+    font-size: 4rem;
+    color: var(--font-color);
+    line-height: 4.2rem;
+}
+
+.image-phone {
+    align-content: center;
+}
+.content-phone p{
+    color: var(--font-color);
+}
+
+.black-back {
+    width: 100vw;
+    height: 120vh;
+    justify-content: center;
+    gap: 8rem;
+    background-color: var(--secondary-color);
+}
+
+.image-black {
+    align-content: center;
+    margin-top: 8rem;
+}
+
+.black-content  {
+    width: 30vw;
+    gap: 0;
+    align-content: center;
+    margin-top: 6rem;
+}
+
+.black-content h2 {
+    font-size: 4rem;
+     width: 75vw;
+}
+
+.black-content p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.connect-container {
+    background-color: var(--secondary-color);
+}
+.connect {
+    width: 100vw;
+    height: 90vh;
+    background-color: #e6ffda;
+    margin-top: 5rem;
+    border-bottom: 0px solid #e6ffda;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    justify-content: center;
+    align-content: center;
+}
+
+.left-connect {
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.left-connect h2 {
+    margin-left: 5rem;
+    min-width: 40vw;
+}
+
+.inner-box-connect {
+    height: 60vh;
+    min-width: 60vh;
+    border-radius: 20px;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+}
+
+.in {
+    max-width: 50vh;
+}
+
+.in h2{
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+
+.in button{
+    background-color: white;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    width: 100vw;
+    height: 75vh;
+    justify-content: center;
+}
+
+.upper-footer {
+    width: 80vw;
+    height: 40vh;
+    margin-top: 5rem;
+    flex-wrap: nowrap;
+    margin-left: 10vw ;
+    justify-content: space-around;
+    gap: 0px;
+}
+
+.ver-box {
+    max-width: 15vw;
+    align-content: center;
+    justify-content: start;
+}
+
+.one {
+    align-content: space-around;
+    justify-content: center;
+}
+
+.ver-box h2 {
+    color: white;
+    font-size: 1.2rem;
+    min-width: 14vw;
+    cursor: pointer;
+}
+
+.ver-box h2:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.ver-box p {
+    color: white;
+    font-size: 1rem;
+}
+
+.ver-box button:hover{
+    background-color: white;
+    color: var(--font-color);
+}
+
+.two {
+    margin-left: 5rem;
+}
+
+
+.lower-footer {
+    width: 80vw;
+    height: 20vh;
+    flex-wrap: nowrap;
+    border-top: 1px solid rgb(146, 146, 146);
+    margin-left: 10vw ;
+    justify-content: space-between;
+}
+
+.left-lower {
+    max-width: 33vw;
+    align-content: center;
+    gap: 4rem;
+}
+
+.left-lower p{
+    font-size: 0.8rem;
+    max-width: 100px;
+}
+
+.mid-lower{
+    max-width: 33vw;
+    align-content: center;
+}
+
+.right-lower {
+    max-width: 33vw;
+    
+    align-content: center;
+}
+
+.right-lower button{
+    color: white;
+    background-color: var(--secondary-color);
+    border: 2px solid white;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+
+
+
